@@ -1,0 +1,96 @@
+<div id="users" class="page-layout simple fullwidth" fusePerfectScrollbar>
+
+  <!-- HEADER -->
+  <div class="header p-16 p-sm-24">
+
+      <div class="header-content" fxLayout="column" fxLayoutAlign="space-between">
+
+          <div class="header-top" fxLayout="row" fxLayoutAlign="space-between center" fxLayout.xs="column">
+
+              <div class="logo mb-16 mb-sm-0" fxLayout="row" fxLayoutAlign="start center">
+                  <mat-icon class="logo-icon" *fuseIfOnDom>account_box</mat-icon>
+                  <span class="logo-text" *fuseIfOnDom>{{ name }}</span>
+              </div>
+
+          </div>
+         
+      </div>
+
+  </div>
+  <!-- / HEADER -->
+
+  <div class="content p-24 ">
+
+    <div fxLayout="column" fxLayoutAlign="start start" fxLayout.gt-md="row">
+        <mat-card style="width: 100%">
+            <div fxLayout="row" fxLayout="100">
+                   <button mat-button (click)="back()"
+                     class="third_class" style="margin-right: 1%">
+                     <!-- <mat-icon class="s-16 mr-sm-4">save</mat-icon> -->
+                     <span>Back</span>
+                   </button>
+            </div>
+            
+
+           <h1>{{ name }}</h1>
+           <div class="pt-12 pb-12" fxLayout="row" fxLayoutAlign="start start" fxFlex="100">
+                <div fxLayout="row" fxFlex="100">
+                    <span fxFlex="80">Company</span>
+                    <span fxFlex="20" class="grey">{{ company }}</span>
+                </div>
+           </div>
+           <mat-divider></mat-divider>
+           <div class="pt-12 pb-12" fxLayout="row" fxLayoutAlign="start start" fxFlex="100">
+                <div fxLayout="row" fxFlex="100">
+                    <span fxFlex="80">City</span>
+                    <span fxFlex="20" class="grey">{{ city }}</span>
+                </div>
+           </div>
+           <mat-divider></mat-divider>
+           <div class="pt-12 pb-12" fxLayout="row" fxLayoutAlign="start start" fxFlex="100">
+                <div fxLayout="row" fxFlex="100">
+                    <span fxFlex="80">State</span>
+                    <span fxFlex="20" class="grey">{{ state }}</span>
+                </div>
+           </div>
+           <mat-divider></mat-divider>
+
+           <div class="pt-12 pb-12" fxLayout="row" fxLayoutAlign="start start" fxFlex="100">
+                <div fxLayout="row" fxFlex="100">
+                    <span fxFlex="80">ZIP</span>
+                    <span fxFlex="20" class="grey">{{ zip }}</span>
+                </div>
+           </div>
+           <mat-divider></mat-divider>
+
+           <div class="pt-12 pb-12" fxLayout="row" fxLayoutAlign="start start" fxFlex="100">
+                <div fxLayout="row" fxFlex="100">
+                    <span fxFlex="80">Email</span>
+                    <span fxFlex="20" class="grey">{{ email }}</span>
+                </div>
+           </div>
+           <mat-divider></mat-divider>
+
+           <div class="pt-12 pb-12" fxLayout="row" fxLayoutAlign="start start" fxFlex="100">
+                <div fxLayout="row" fxFlex="100">
+                    <span fxFlex="80">Web</span>
+                    <span fxFlex="20" class="grey">{{ web }}</span>
+                </div>
+           </div>
+           <mat-divider></mat-divider>
+
+           <div class="pt-12 pb-12" fxLayout="row" fxLayoutAlign="start start" fxFlex="100">
+                <div fxLayout="row" fxFlex="100">
+                    <span fxFlex="80">Age</span>
+                    <span fxFlex="20" class="grey">{{ age }}</span>
+                </div>
+           </div>
+           <mat-divider></mat-divider>
+
+        </mat-card>
+
+    </div>
+
+  </div>
+
+</div>

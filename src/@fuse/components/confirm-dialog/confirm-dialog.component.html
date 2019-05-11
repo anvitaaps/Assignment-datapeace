@@ -1,0 +1,28 @@
+<style type="text/css">
+    .block {
+       display: block;
+    }
+ </style>
+ <h1 matDialogTitle><span class="title dialog-title">Delete Event</span></h1>
+<div mat-dialog-content>{{confirmMessage}}</div>
+<ng-container *ngIf="show == true">
+        <div>
+                <mat-radio-group [(ngModel)]="type" class="block" name="radioButtons">
+                    <mat-radio-button class="block" value="1">
+                        All events
+                    </mat-radio-button>
+                    <mat-radio-button class="block" value="2">
+                        Only current event
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+</ng-container>
+
+<div *ngIf="show == true" mat-dialog-actions class="pt-24">
+    <button mat-button class="primary_class mr-16" [disabled]="type == '0'" (click)="dialogRef.close(type)">Confirm</button>
+    <button mat-button class="third_class" (click)="dialogRef.close('0')">Cancel</button>
+</div>
+<div *ngIf="show == false" mat-dialog-actions class="pt-24">
+    <button mat-button class="primary_class mr-16" (click)="dialogRef.close('1')">Confirm</button>
+    <button mat-button class="third_class" (click)="dialogRef.close('0')">Cancel</button>
+</div>

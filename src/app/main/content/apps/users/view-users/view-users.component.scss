@@ -1,0 +1,230 @@
+// @import "src/@fuse/scss/fuse";
+// :host {
+//     display: flex;
+//     flex: 1 0 auto;
+//     flex-direction: column;
+//     height: 100%;
+
+//     .header {
+
+//         .logo {
+
+//             .logo-icon {
+//                 margin: 0 16px 0 0;
+//                 color: #fff;
+//             }
+
+//             .logo-text {
+//                 font-size: 24px;
+//                 line-height: 24px;
+//             }
+//         }
+
+//         .account {
+//             width: 100%;
+//         }
+//     }
+//     .content {
+
+//         .compose-dialog-button {
+//         }
+//     }
+// }
+
+// :host {
+//     width: 100%;
+
+//     .center {
+
+//         .header {
+
+//             .search-wrapper {
+//                 @include mat-elevation(7);
+
+//                 .sidenav-toggle {
+//                     margin: 0;
+//                     width: 56px;
+//                     height: 56px;
+//                     background: #FFF;
+//                     border-radius: 0;
+//                     border-right: 1px solid rgba(0, 0, 0, .12);
+//                 }
+
+//                 .search {
+//                     width: 100%;
+//                     height: 56px;
+//                     line-height: 56px;
+//                     padding: 18px;
+
+//                     input {
+//                         height: 56px;
+//                         padding-left: 16px;
+//                         color: rgba(0, 0, 0, 0.54);
+//                         border: none;
+//                         outline: none;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .content-card {
+
+//             @include media-breakpoint(xs) {
+
+//                 fuse-mail-list {
+//                     border-right: none;
+//                 }
+
+//                 fuse-mail-list,
+//                 fuse-mail-details {
+//                     flex: 1 0 100%;
+//                 }
+
+//                 fuse-mail-details {
+//                     display: none !important;
+//                 }
+
+//                 &.current-mail-selected {
+
+//                     .toolbar {
+//                         padding-left: 16px !important;
+
+//                         .mail-selection {
+//                             display: none !important;
+//                         }
+//                     }
+
+//                     .content {
+
+//                         fuse-mail-list {
+//                             display: none !important;
+//                         }
+
+//                         fuse-mail-details {
+//                             display: flex !important;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@import "src/@fuse/scss/fuse";
+
+#users {
+  background: #FFFFFF;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .header {
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    position: relative;
+    background-size: 100% auto;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-color: #FAFAFA;
+    color: #FFFFFF;
+
+    @include media-breakpoint(xs) {
+      height: 164px;
+      min-height: 164px;
+      max-height: 164px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    //   background: rgba(0, 0, 0, 0.45);
+    }
+
+    .header-content {
+      height: 100%;
+
+
+      .header-top {
+        position: relative;
+        z-index: 2;
+
+        .logo {
+
+          .logo-icon {
+            margin-right: 16px;
+          }
+
+          .logo-text {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .header-bottom {
+        position: relative;
+        z-index: 2;
+
+        .title {
+          font-size: 20px;
+          min-width: 160px;
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .add-event-button {
+      position: absolute;
+      right: 18px;
+      bottom: -26px;
+      z-index: 10;
+    }
+
+    mat-icon {
+      color: #FFFFFF;
+    }
+  }
+
+  .content {
+    padding: 24px;
+    .center {
+
+       
+
+        .search-wrapper {
+            @include mat-elevation(7);
+
+            .sidenav-toggle {
+                margin: 0;
+                width: 56px;
+                height: 56px;
+                background: #FFF;
+                border-radius: 0;
+                border-right: 1px solid rgba(0, 0, 0, .12);
+            }
+
+            .search {
+                width: 100%;
+                height: 56px;
+                line-height: 56px;
+                padding: 18px;
+
+                input {
+                    height: 56px;
+                    padding-left: 16px;
+                    color: rgba(0, 0, 0, 0.54);
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+   
+}
+  }
+}
+

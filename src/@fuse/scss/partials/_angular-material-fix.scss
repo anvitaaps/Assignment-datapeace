@@ -1,0 +1,511 @@
+// Fix: "Icon button ripple radius is not correct on Edge & Safari"
+.mat-icon-button {
+
+    .mat-button-ripple {
+        border-radius: 50%;
+    }
+}
+
+.mat-grid-tile {
+    background: lightblue;
+  }
+
+.mat-tab-group {
+    font-family: 'Lato';
+}
+
+.mat-card {
+    font-family: 'Lato';
+}
+
+// Fix: "Inconsistent font sizes across elements"
+.mat-form-field-wrapper {
+    font-size: 16px;
+}
+
+.mat-checkbox {
+    font-size: 16px;
+    font-family: 'Lato';
+}
+
+.mat-radio-button {
+    font-size: 16px;
+    font-family: 'Lato';
+}
+
+.mat-pseudo-checkbox-checked:after {
+    width: 14px !important;
+    height: 7px !important;
+}
+
+.mat-checkbox {
+    font-size: 14px!important;
+}
+
+.mat-checkbox-label {
+    font-weight: 400!important;
+}
+.mat-checkbox-inner-container {
+    height: 14px!important;
+    width: 14px!important;
+}
+
+.mat-checkbox-layout {
+    vertical-align: 0%!important;
+}
+
+.mat-slide-toggle-bar {
+    height: 11px!important;
+    width: 30px!important;
+}
+
+.mat-slide-toggle-thumb {
+    height: 15px!important;
+    width: 15px!important;
+}
+
+.mat-radio-container {
+    height: 11px!important;
+    width: 11px!important;
+}
+
+.mat-radio-outer-circle {
+    height: 14px!important;
+    width: 14px!important;
+}
+
+.mat-radio-button {
+    font-size: 16px;
+}
+
+.mat-radio-label-content {
+    margin-top: 4%!important;
+    font-size: 14px!important;
+}
+
+.mat-radio-label {
+    font-weight: 400!important;
+}
+
+.mat-pseudo-checkbox-checked:after {
+    width: 14px !important;
+    height: 7px !important;
+}
+
+.nav .nav-item .nav-link.active {
+    background-color: #2dbecd;
+}
+
+// Fix: "Input underlines has wrong color opacity value"
+.mat-form-field-underline {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.mat-radio-inner-circle {
+    height: 16px!important;
+    left: -9%!important;
+    top: -9%!important;
+    width: 16px!important;
+}
+
+// Fix: "Input underlines has wrong color opacity value"
+.mat-form-field-underline {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+// Fix: "Some idiots using table-cell and inline-table in mat-select"
+.mat-form-field {
+
+    &.mat-form-field-type-mat-select {
+
+        .mat-form-field-infix {
+            display: inline-flex;
+            // width: auto;
+
+            .mat-select-trigger {
+                display: inline-flex;
+                align-items: center;
+                width: 100%;
+
+                .mat-select-value {
+                    display: flex;
+                    max-width: none;
+                    margin-right: 8px;
+                }
+
+                .mat-select-arrow-wrapper {
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+}
+
+// Fix: Stepper icons are broken due to Fuse's icon helpers
+mat-horizontal-stepper,
+mat-vertical-stepper {
+
+    mat-step-header {
+
+        mat-icon {
+            height: 16px !important;
+            width: 16px !important;
+            min-width: 0 !important;
+            min-height: 0 !important;
+            color: inherit !important;
+        }
+    }
+}
+
+mat-vertical-stepper {
+    padding: 16px 0;
+}
+
+// Fix: Chip remove icon is broken due to Fuse's icon helpers
+mat-chip {
+
+    mat-icon {
+        min-width: 0 !important;
+        min-height: 0 !important;
+    }
+}
+
+.primary_class {
+    background-color: #2dbecd;
+    color : #fff;
+}
+
+.secondary_class {
+    background-color: #FBC707;
+    color : #fff;
+}
+
+.third_class {
+    background-color: #F8F8FC;
+    color : #2dbecd;
+}
+
+.orange-icon {
+    color: #db4437;
+}
+
+.green-icon {
+    color: #0f9d58;
+}
+
+.yellow-icon {
+    color: #ff9900;
+}
+
+.grey-icon {
+    color: grey;
+}
+
+.primary_icon {
+    color: #2dbecd;
+    cursor: pointer;
+}
+
+.secondary_icon {
+    color: #FBC707;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #2DBECD;
+    height: 3px;
+}
+
+.mat-tab-label {
+    font-family: 'Lato';
+    color: #2DBECD;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.mat-ink-bar {
+    height: 3px;
+}
+
+.mat-button:disabled {
+    background-color: #F8F8FC;
+}
+
+.errorSnackBar {
+    background: red;
+  }
+
+.mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple) {
+    color: #2DBECD;
+}
+
+.mat-option.mat-active {
+    color: #2DBECD;
+}
+
+:hover::placeholder {
+    color: #2dbecd;
+    opacity: 1; /* Firefox */
+}
+
+input[type='text']:hover {
+    background-image: url(assets/images/search_hover.png);
+    background-position: 11px 14px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: #F8F8FC;
+    /* text-align: center; */
+}
+
+input[type='text']:focus {
+    background-image: url(assets/images/search_hover.png);
+    background-position: 11px 14px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: #F8F8FC;
+    outline: none;
+    box-shadow: 0px 2px 0px 0px #2dbecd;
+}
+
+.searchInput {
+    @include media-breakpoint('lg') {
+        width: 35%;
+    }
+    @include media-breakpoint('xl') {
+        width: 45%;
+    }
+    @include media-breakpoint('xs') {
+        width: 100%;
+    }
+    @include media-breakpoint('sm') {
+        width: 100%;
+    }
+    background-image: url(assets/images/search.png);
+    background-position: 11px 14px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: #F8F8FC;
+}
+
+//  .mat-form-field-underline {
+//     display: none;
+// }
+
+// input.mat-input-element {
+//     margin-top: -1.0625em;
+//     padding: 3%;
+//     background-color: #F8F8FC;
+// }
+
+.mat-select {
+    // margin-top: -1.0625em;
+    // margin-bottom: -1.0625em;
+    // margin-bottom: -1.0625em;
+    // padding: 3%;
+    background-color: transparent;
+}
+
+.mat-select-placeholder {
+
+    color: rgba(0, 0, 0, 0.27);
+
+}
+
+// .mat-form-field-appearance-legacy .mat-form-field-infix {
+//     padding: 1.4375em 0;
+// }
+
+.ml-3 {
+    margin-left: 5% !important;
+}
+
+.ml-2 {
+    margin-left: 2% !important;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.blue_icon {
+    color: #2dbecd;
+}
+
+.yellow_icon {
+    color: #FBC707;
+}
+
+.download_button {
+    margin-top:2%;
+    height: 40px;
+    width: 115px;
+
+    @include media-breakpoint('xs') {
+        display: block;
+    }
+    @include media-breakpoint('sm') {
+        display: block;
+    }
+}
+
+.xml_class {
+    color: #FFFFFF;
+}
+
+//amazing time picker css
+#time-picker-wrapper.light #time-picker .time-picker-clock > button.active {
+
+    background: #2DBECD !important;
+    color: #fff;
+
+}
+
+#time-picker-wrapper.ligh #time-picker .time-picker-clock .time-picker-clock-arrow {
+
+    background: #2DBECD !important;
+
+}
+
+#time-picker-wrapper.light #time-picker .time-picker-clock .time-picker-clock-origin {
+
+    background: #2DBECD !important;
+
+}
+
+#time-picker-wrapper.light[_ngcontent-c42] #time-picker[_ngcontent-c42] .time-picker-clock[_ngcontent-c42] .time-picker-clock-arrow[_ngcontent-c42] span[_ngcontent-c42] {
+
+    background: #2DBECD !important;
+
+}
+
+// #time-picker-wrapper.light[_ngcontent-c31] #time-picker[_ngcontent-c31] .time-picker-clock[_ngcontent-c31] .time-picker-clock-arrow[_ngcontent-c31] {
+//     background: #2DBECD !important;
+// }
+
+#time-picker-wrapper.light[_ngcontent-c33] #time-picker[_ngcontent-c33] .time-picker-clock[_ngcontent-c33] .time-picker-clock-arrow[_ngcontent-c33] {
+    background: #2DBECD !important;
+}
+
+#time-picker-wrapper.light[_ngcontent-c42] #time-picker[_ngcontent-c42] .time-picker-clock[_ngcontent-c42] > button.active[_ngcontent-c42] {
+    background: #2DBECD !important;
+}
+
+#time-picker-wrapper.light[_ngcontent-c42] #time-picker[_ngcontent-c42] .time-picker-clock[_ngcontent-c42] .time-picker-clock-origin[_ngcontent-c42] {
+    background: #2DBECD !important;
+}
+
+.mat-toolbar.mat-accent {
+
+    background: #2DBECD !important;
+    color: white;
+
+}
+
+.mat-accent-bg {
+
+    background-color: #2DBECD !important;
+    color: white !important;
+
+}
+
+.w-49-p {
+    width: 49.5% !important;
+}
+
+.mat-chip-list-wrapper .mat-standard-chip, .mat-chip-list-wrapper input.mat-input-element {
+
+    margin: 12px !important;
+
+}
+
+.mat-icon-button {
+    margin-top : 1% !important;
+}
+
+.datatable-body-cell-label {
+    width: 70% !important;
+    // 
+    // 
+}
+
+.editClass {
+    border-bottom: 0.7px solid;
+    padding-bottom: 3%;
+}
+
+.mat-input-element {
+    font-size: small !important;
+}
+  
+.mat-select {
+    font-size: small !important;
+}
+
+.fuse-primary-card {
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1524px) {
+      height: 190px;
+    }
+  
+    @media only screen and (min-width : 1024px) and (max-width : 1523px) {
+        height: 220px;
+    }
+
+    border-radius: 2px;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    background-color: #2DBECD;
+}
+
+.fuse-secondary-card {
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1024px) {
+        height: 190px;
+      }
+    
+      @media only screen and (min-width : 1024px) and (max-width : 1523px) {
+          height: 220px;
+      }
+    border-radius: 2px;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    background-color: #FBC707;
+}
+
+.fuse-third-card {
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1024px) {
+        height: 190px;
+      }
+    
+      @media only screen and (min-width : 1024px) and (max-width : 1523px) {
+          height: 220px;
+      }
+    border-radius: 2px;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    background-color: #4B2A91;
+}
+
+.white-font {
+    color: #FFFFFF;
+}
+
+.third_icon {
+    color: #4B2A91;
+}
+
+.mat-form-field-prefix {
+    font-size: small !important;
+}
+
+
