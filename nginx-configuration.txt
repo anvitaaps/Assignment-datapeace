@@ -1,0 +1,65 @@
+If you want to deploy your application on server please follow the steps mentioned below :
+
+Steps to install nginx on server :-
+
+1. Update your local package index : sudo apt update.
+
+2. Install Nginx : sudo apt install nginx.
+
+3. Adjusting the Firewall : sudo ufw allow 'Nginx HTTP'.
+
+4. Access the default Nginx landing page to confirm that the software is running properly through your IP address : http://your_server_ip.
+
+Steps to deploy your application server :-
+
+1. Copy or clone your application folder to server directory '/home'.
+
+2. Go to the directory '/etc/nginx/sites-available/' and open file named 'default'.
+
+3. Paste in the following configuration block, updated for your new directory :
+	server {
+        listen 80;
+        listen [::]:80;
+
+        root /home/(name of your application folder);
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+    }
+    Save and close the file when you are finished.
+
+4. Enable the file by creating a link from it to the sites-enabled directory:
+   sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+
+5. Restart Nginx to enable your changes : sudo systemctl restart nginx.
+
+Setting up a domain name for your application :-
+
+1. update the default config file. Open it with nano or your favorite text editor.
+   sudo nano /etc/nginx/sites-available/default.
+
+2. Find the existing server_name line and replace the underscore, _, with your domain name:
+   server_name example.com www.example.com;
+   Save the file and quit your editor.
+
+3. Once your configuration's syntax is correct, reload Nginx to load the new configuration.
+   'sudo systemctl reload nginx' OR 'killall nginx' then 'nginx'.
+
+Setting up 'https' and redirecting 'http://example.com' to 'https://example.com' :-
+
+4. Allowing HTTPS Through the Firewall : sudo ufw allow 'Nginx Full'.
+
+5. Obtaining an SSL Certificate : sudo certbot --nginx -d example.com -d www.example.com.
+
+6. If that's successful, certbot will ask how you'd like to configure your HTTPS settings. Select your choice then hit ENTER. The configuration will be updated, and Nginx will reload to pick up the new settings.
+
+7. Now open 'example.com', it will redirect you to 'https://example.com'.
+
+
+
+
+
