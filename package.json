@@ -55,7 +55,7 @@
     "js2xmlparser": "3.0.0",
     "jspdf": "1.5.3",
     "jspdf-autotable": "3.0.10",
-    "lodash": "4.17.10",
+    "lodash": "4.17.13",
     "mat-color-picker": "1.4.3",
     "material-time-control": "github:SteveDunlap13/MaterialTimeControl",
     "moment": "2.22.1",
